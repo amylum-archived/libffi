@@ -31,7 +31,6 @@ build: submodule deps
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
 	cd $(BUILD_DIR) && ./autogen.sh
-	patch -d $(BUILD_DIR) -p1 < patches/0001-Fix-paths-in-libffi.pc.in.patch
 	cd $(BUILD_DIR) && CC=musl-gcc CFLAGS='$(CFLAGS)' ./configure $(PATH_FLAGS) $(CONF_FLAGS)
 	cd $(BUILD_DIR) && make DESTDIR=$(RELEASE_DIR) install
 	rm -rf $(RELEASE_DIR)/tmp
