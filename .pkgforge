@@ -1,0 +1,19 @@
+name 'libffi'
+org 'amylum'
+
+configure_flags(
+  prefix: '/usr'
+)
+
+harden
+
+build do
+  run './autogen.sh'
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end

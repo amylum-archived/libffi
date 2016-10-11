@@ -1,6 +1,8 @@
 libffi
 ==========
 
+[![Build Status](https://img.shields.io/circleci/project/amylum/libffi/master.svg)](https://circleci.com/gh/amylum/libffi)
+[![GitHub release](https://img.shields.io/github/release/amylum/libffi.svg)](https://github.com/amylum/libffi/releases)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 Package repo for [libffi](http://sourceware.org/libffi/)
